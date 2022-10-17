@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background: lightgrey;
+  color: #293264;
+}
+
+.start-page{
+  max-width: 800px;
+  height: 95vh;
+  background-image: linear-gradient(to right top, #deebf8, #d3f3fa, #d1f9f0, #e1fcdf, #fffad1);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem
+}
+
+main{
+  background-image: linear-gradient(to right top, #deebf8, #d3f3fa, #d1f9f0, #e1fcdf, #fffad1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border-radius: 10px;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading{
+  text-align: center;
+  font-size: 2.5rem;
+  background: #DEEBF8;
+  border-radius: 10px;
+  padding: .25em 0;
+}
+
+.question{
+  
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  
+}
+
+.answers-container{
+  font-family: 'Inter', sans-serif;
+  display: grid; 
+  grid-template: 50px / repeat(4, 1fr) 25px;
+  grid-gap: 1em;
+  margin: 1em 0 1em 0;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+  
+}
+.answer{
+  background: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1.5em; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: .75rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+
+.button{
+  border: none;
+  border-radius: 5px;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: .5em 1em;
+  background: #4D5B9E;
+  margin-top: .75em;
+  align-self: center;
+  color: white
+}
+
+.button:hover, .button:focus{
+  outline: none;
+  background: #717899;
+}
+
+.reset-btn{
+  font-family: 'Karla', sans-serif;
+  font-size: .5rem;
+  border: none;
+  padding: 1em;
+  border-radius: 50px;
+  background: #4D5B9E;
+  cursor: pointer;
+  color: white;
+}
+
+.check-answers{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.score{
+  padding-top: .5em;
+  font-size: 1.5rem;
+  margin-right: 2em;
+}
